@@ -383,7 +383,7 @@ contract BeastToken is Context, IERC20, Ownable {
     address[] private _excluded;
 
     uint256 private constant MAX = ~uint256(0);
-    uint256 private _tTotal = 1000000000000 * 10**9;
+    uint256 private _tTotal = 1000000000000 * 10**8;
     uint256 private _rTotal = (MAX - (MAX % _tTotal));
     uint256 private _tFeeTotal;
 
@@ -404,7 +404,7 @@ contract BeastToken is Context, IERC20, Ownable {
     bool inSwap = false;
 
     // We will set a minimum amount of tokens to be swaped => 5M
-    uint256 private _numOfTokensToExchangeForBeast = 5 * 10**3 * 10**9;
+    uint256 private _numOfTokensToExchangeForBeast = 5 * 10**3 * 10**8;
 
     event MinTokensBeforeSwapUpdated(uint256 minTokensBeforeSwap);
 
